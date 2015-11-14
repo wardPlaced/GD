@@ -242,6 +242,7 @@ public:
     void RealizeRibbonCustomButtons();
     void SetLastUsedFile(wxString file);
     bool Save(gd::Project & project, wxString file);
+    void OnLoseFocus(wxFocusEvent& event);
 
 private:
 
