@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import Window from '../Utils/Window';
+import React, { Component } from 'react';
+import Titlebar from '../UI/Titlebar';
 
 export default class ProjectTitlebar extends Component {
   render() {
@@ -7,7 +7,6 @@ export default class ProjectTitlebar extends Component {
     const titleElements = ['GDevelop'];
     if (project) titleElements.push(project.getProjectFile() || project.getName());
 
-    Window.setTitle(titleElements.join(' - '));
-    return null;
+    return <Titlebar title={titleElements.join(' - ')} />;
   }
 }

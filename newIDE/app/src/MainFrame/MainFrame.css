@@ -15,6 +15,10 @@
   animation: fadein 0.5s;
 }
 
+.title-bar {
+  -webkit-app-region: drag;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

@@ -34,6 +34,7 @@ app.on('ready', function() {
     height: args.height || 600,
     x: args.x,
     y: args.y,
+    titleBarStyle: 'hidden',
     webPreferences: {
       webSecurity: false, // Allow to access to local files
     },
